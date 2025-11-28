@@ -26,7 +26,32 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+```python
+class Beans:
+    def type(self):
+        print("Vegetable")
+    def color(self):
+        print("Green")
 
+class Mango:
+    def type(self):
+        print("Fruit")
+    def color(self):
+        print("Yellow")
+
+def func(obj):
+    obj.type()
+    obj.color()
+
+obj1 = Beans()
+obj2 = Mango()
+
+func(obj1)
+func(obj2)
+
+```
 ## Output
+![image](https://github.com/user-attachments/assets/2a50a3e8-3cee-455c-9ade-f6ed33b9411f)
 
 ## Result
+The program successfully demonstrates polymorphism in Python OOP by using a generic function that works with different classes (Beans and Mango) and calls their respective methods.
